@@ -3,3 +3,7 @@
 @theme {
   --color-primary: #00FFAB;
 }
+
+.btn{
+  @apply border border-2 rounded-2xl w-auto border-primary cursor-pointer text-white hover:translate-0 font-bold
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="bg-black h-screen">
+    <div className="bg-black">
       <div className="flex justify-between items-center px-4">
         <div className="m-[24px]">
           <h1 className=" text-primary text-[24px] font-bold">RATHI M</h1>
