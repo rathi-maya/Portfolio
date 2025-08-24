@@ -12,7 +12,7 @@ function Home() {
          <p className='font-semibold text-[20px] text-white'> A passionate 2nd-year B.Tech Information Technology student and an aspiring frontend developer. I’m currently learning the <span className='font-bold text-primary'>MERN Stack </span>(MongoDB, Express, React, Node.js) and love building responsive, user-focused websites</p>
       </div>
       <div className='flex mt-3'>
-         <button className='btn p-2 mr-3'>View My Work</button>
+         <button className='btn p-2 mr-3 '>View My Work</button>
          <button className='btn p-3'>Download My Resume</button>
       </div>
    </div>
