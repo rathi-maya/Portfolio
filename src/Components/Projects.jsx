@@ -1,25 +1,18 @@
-import React from 'react'
-
-function Projects() {
+function Projects(props) {
   return (
-    <div className="bg-black min-h-screen text-primary">
-        <div className='text-[32px] text-primary font-bold text-center' >Projects</div>
+      <div className="text-white h-[400px] w-[350px] border-2 border-primary m-5 rounded-[5px] p-5">
         <div>
-            <div className='grid grid-cols-3 gap-4 text-white justify-between'>
-                <div className='projectcol'>
-                    <h1 className='text-center text-[20px]'>Login and Sign Up page</h1>
-                    <p className='text-[16px]'>A clean, responsive login and signup UI built using HTML and CSS. Designed with modern form styling and mobile-friendly layout.</p>
-                </div>
-                 <div className='projectcol'>
-                    Login and Sign Up page
-                </div>
-                 <div className='projectcol'>
-                    Login and Sign Up page
-                </div>
-            </div>
-        </div>
-    </div>
-  )
+        <h2 className="text-center text-xl" >{props.title}</h2>
+        <p>{props.description}</p>
+        <h3>Tech Stack</h3>
+           <p>{props.techstack1}</p>
+           <p>{props.techStack2}</p>
+        <h3>Links</h3>
+           <button></button>
+      </div>
+      </div>
+  
+  );
 }
 
-export default Projects
+export default Projects;
