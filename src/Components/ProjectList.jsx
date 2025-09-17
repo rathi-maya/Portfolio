@@ -7,20 +7,23 @@ function ProjectList() {
         {
            title : "Login & Signup page",
            description : "A clean, responsive login and signup UI built using HTML and CSS. Designed with modern form styling and mobile-friendly layout.",
-           techstack1 : "HTML",
-           techstack2 : "CSS",
+           techstack1 : "[HTML]",
+           techstack2 : "[CSS]",
     },
         {
-           title : "Login & Signup page",
-           description : "A clean, responsive login and signup UI built using HTML and CSS. Designed with modern form styling and mobile-friendly layout.",
-           techstack : "HTML",
-           techstack : "CSS",
+           title : "Weather Website",
+           description : "A Web app that shows real-time weather info using the OpenWeatherMap API. Users can search by city and get temperature, humidity and weather icons.",
+           techstack1: "[HTML]",
+           techstack2: "[CSS]",
+            techstack3: "[JavaScript]",
+             techstack4: "[API]",
+
     },
      {
-           title : "Login & Signup page",
-           description : "A clean, responsive login and signup UI built using HTML and CSS. Designed with modern form styling and mobile-friendly layout.",
-           techstack : "HTML",
-           techstack : "CSS",
+            title : "Portfolio",
+           description : "My personal protfolio showcasing projects, contact info and skills. Built using React and designed to be fully responsive with clean navigation",
+           techstack1: "[ReactJs]",
+           techstack2: "[Tailwind CSS]",
     }
     ]
 
@@ -31,7 +34,13 @@ function ProjectList() {
         title={project.title} 
         description={project.description} 
         techstack1={project.techstack1} 
-        techstack2={project.techstack2} />)
+        techstack2={project.techstack2} 
+        techstack3={project.techstack3} 
+        techstack4={project.techstack4} 
+        techstack5={project.techstack5} 
+        view ={project.view}
+        source = {project.source}
+        />)
 
   return (
     <>
