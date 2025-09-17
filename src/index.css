@@ -5,13 +5,9 @@
 }
 
 .btn{
-  @apply  border-2 border-primary rounded-2xl w-auto cursor-pointer text-white hover:translate-0 font-bold
+  @apply  border-2 border-primary rounded-2xl p-2 mr-3 w-auto cursor-pointer text-white hover:translate-0 font-bold
 }
 
 .image{
   @apply h-[400px] w-[400px]
-}
-
-.projectcol{
-  @apply border-2 rounded-[10px] border-primary h-[420px] w-[340px] p-5
 }
