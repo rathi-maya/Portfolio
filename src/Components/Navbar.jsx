@@ -1,5 +1,3 @@
-import React from "react";
-
 function Navbar() {
   return (
     <div className="bg-black">
@@ -9,11 +7,11 @@ function Navbar() {
         </div>
         <div className="m-[24px]">
             <ul className="flex items-center gap-8">
-                <li className="text-primary">Home</li>
-                <li className="text-white">About Me</li>
-                <li className="text-white">Skills</li>
-                <li className="text-white">Projects</li>
-                <li className="text-white">Contact</li>
+                <li className=" navbarHover">Home</li>
+                <li className=" navbarHover">About Me</li>
+                <li className=" navbarHover">Skills</li>
+                <li className="navbarHover">Projects</li>
+                <li className="navbarHover">Contact</li>
             </ul>
         </div>
       </div>
