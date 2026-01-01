@@ -19,6 +19,8 @@ function ProjectList() {
            techstack2: "[CSS]",
             techstack3: "[JavaScript]",
              techstack4: "[API]",
+             view: "https://rathi-maya.github.io/Weather/",
+             source : "https://github.com/rathi-maya/Weather.git"
 
     },
      {
