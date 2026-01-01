@@ -9,6 +9,8 @@ function ProjectList() {
            description : "A clean, responsive login and signup UI built using HTML and CSS. Designed with modern form styling and mobile-friendly layout.",
            techstack1 : "[HTML]",
            techstack2 : "[CSS]",
+           view: " https://rathi-maya.github.io/Login_Page/",
+           source : "https://github.com/rathi-maya/Login_Page.git"
     },
         {
            title : "Weather Website",
@@ -24,6 +26,7 @@ function ProjectList() {
            description : "My personal protfolio showcasing projects, contact info and skills. Built using React and designed to be fully responsive with clean navigation",
            techstack1: "[ReactJs]",
            techstack2: "[Tailwind CSS]",
+           source :"https://github.com/rathi-maya/Portfolio.git"
     }
     ]
 
@@ -45,10 +48,12 @@ function ProjectList() {
   return (
     <>
        <div className="bg-black min-h-screen">
-      <div className="text-primary text-[40px] font-bold text-center">
-        <h1>Projects</h1>  
+      <div className="text-primary  font-bold text-center">
+              <h2 className="headHover">
+  Project
+</h2>
       </div>
-      <div className="flex flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-5 ">
         {projectsList}     
       </div>
     </div>
