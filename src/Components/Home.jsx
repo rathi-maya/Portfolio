@@ -3,21 +3,35 @@ const Home = () => {
      <section id="home" className="min-h-screen flex items-center bg-black ">
     <div className="w-full px-6 sm:px-10 md:px-16 lg:px-24">
         <div>
-          <h1 className="text-[32px] sm:text-[38px] md:text-[44px] lg:text-[48px] font-bold leading-tight text-white">
+          <h1 className="text-[32px] sm:text-[39px] md:text-[45px] lg:text-[49px] font-bold leading-tight text-white">
             Hi, I'm <span className="text-primary">Rathi M</span>
           </h1>
-          <h2 className="mt-2 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[20px]
+          <h2 className="mt-2 text-[16px] sm:text-[18px] md:text-[19px] lg:text-[21px]
            font-semibold text-white">
             <span className="text-primary">Frontend Developer</span> | B.Tech IT Student | MERN Stack Learner
           </h2>
-          <p className="mt-2 font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-relaxed text-white  max-w-full sm:max-w-[90%] md:max-w-[750px] lg:max-w-[900px] xl:max-w-[1000px]">
+          <p className="mt-4 text-base font-semibold text-[15px] sm:text-lg leading-relaxed md:text-[17px] lg:text-[19px] leading-relaxed text-white  max-w-full sm:max-w-[90%] md:max-w-[750px] lg:max-w-[900px] xl:max-w-[1000px]">
             A passionate 2nd-year B.Tech Information Technology student and an aspiring frontend developer. I'm currently learning the <span className="text-primary font-semibold">MERN stack</span> (MongoDB, Express, React, Node.js) and love building responsive, user-focused websites.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <a href="#projects" className="inline-block px-6 py-3 font-medium text-white border-2 border-[#00ffab] rounded-full hover:bg-[#00ffab] hover:text-black transition-colors duration-300 text-center">
+          <div className="flex flex-row gap-3 sm:gap-4 mt-4">
+            <a href="#projects" className="flex items-center justify-center
+           border-2 border-emerald-400 text-white rounded-full
+           h-8 text-[10px] px-3
+           sm:h-9 sm:text-sm sm:px-5
+           md:h-11 md:text-base md:px-7
+           whitespace-nowrap
+           hover:bg-emerald-400 hover:text-black font-semibold
+           transition-all duration-300">
               View My Work
             </a>
-            <a href="/RathiM_Resume.pdf" download className="inline-block px-6 py-3 font-medium text-white border-2 border-[#00ffab] rounded-full hover:bg-[#00ffab] hover:text-black transition-colors duration-300 text-center">
+            <a href="/RathiM_Resume.pdf" download className="flex items-center justify-center
+           border-2 border-emerald-400 text-white rounded-full
+           h-8 text-[10px] px-3
+           sm:h-9 sm:text-sm sm:px-5
+           md:h-11 md:text-base md:px-7
+           whitespace-nowrap
+           hover:bg-emerald-400 hover:text-black font-semibold
+           transition-all duration-300">
               Download My Resume
             </a>
           </div>
