@@ -50,7 +50,7 @@ function ProjectList() {
   return (
     <>
       
-       <div className="bg-black h-auto">
+       <div className="bg-black min-h-screen">
       <div className="text-primary  font-bold text-center">
               <h2 className="headHover">
   Project
