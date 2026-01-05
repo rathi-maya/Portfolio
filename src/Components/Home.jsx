@@ -1,6 +1,7 @@
 const Home = () => {
   return (
-     <section id="home" className="min-h-screen flex items-center bg-black ">
+ <section id="home" className="min-h-screen flex item-start pt-24 bg-black">
+
     <div className="w-full px-6 sm:px-10 md:px-16 lg:px-24">
         <div>
           <h1 className="text-[32px] sm:text-[39px] md:text-[45px] lg:text-[49px] font-bold leading-tight text-white">

@@ -1,11 +1,11 @@
 import React from "react";
-import ProfilePic from "../assets/profile.jpg";
+import ProfilePic from "../assets/ai-generated.png";
 import SideBar from "../assets/education_sideBar.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-black text-white">
-      <div className="w-full md:w-1/3 md:p-10 flex-shrink-0 md:sticky md:top-0 md:h-screen overflow-hidden">
+     <div className="flex flex-col md:flex-row min-h-screen bg-black text-white">
+      <div className="w-full md:w-1/3 md:p-10 flex-shrink-0 md:sticky md:top-0  ">
         <div className="p-8 md:p-0 flex items-center justify-center">
           <img
             src={ProfilePic}
@@ -16,7 +16,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-2/3 p-10 overflow-y-auto">
+      <div className="w-full md:w-2/3 p-10 ">
         <h1 className="text-4xl font-bold mb-4 text-primary headHover">
           About Me
         </h1>
@@ -43,7 +43,7 @@ const About = () => {
             <img src={SideBar} alt="timeline" class="h-24 w-auto" />
           </div>
           <div>
-            <h3 class="text-2xl font-semibold text-white">
+            <h3 class="text-xl mt-1 font-semibold text-white">
               B.Tech Information Technology
             </h3>
             <p class="text-lg text-gray-300 mt-1">
@@ -61,7 +61,7 @@ const About = () => {
           </div>
 
           <div>
-            <h3 class="text-2xl font-semibold text-white">
+            <h3 class="text-xl mt-1 font-semibold text-white">
               Higher Secondary Education (Class 12)
             </h3>
             <p class="text-lg text-gray-300 mt-1">
@@ -81,7 +81,7 @@ const About = () => {
         </div>
 
           <div>
-            <h3 class="text-2xl font-semibold text-white">
+            <h3 class="text-xl mt-1 font-semibold text-white">
               Secondary Education (Class 10)
             </h3>
             <p class="text-lg text-gray-300 mt-1">
@@ -90,6 +90,8 @@ const About = () => {
             <p class="text-sm text-[#9FFFCB] mt-2">2021 - 2022</p>
           </div>
         </div>
+
+        {/* 9841277240 */}
 
       </div>
     </div>
