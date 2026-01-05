@@ -12,10 +12,7 @@ function Skills() {
     <div className="bg-black p-[20px]">
       <div className="text-center">
         <h2
-          className="text-[36px] font-bold text-primary relative inline-block 
-  after:content-[''] after:absolute after:left-0 after:bottom-0 
-  after:w-0 after:h-[3px] after:bg-primary after:transition-all after:duration-500 
-  hover:after:w-full"
+          className="headHover"
         >
           Skills
         </h2>
