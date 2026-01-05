@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
+
+
+html, body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background-color: black;
+}
+
 @theme {
   --color-primary: #00ffab;
 }
+
 
 .navbarHover {
   @apply relative text-white hover:text-primary transition-colors duration-300 
