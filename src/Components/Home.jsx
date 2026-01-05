@@ -16,7 +16,7 @@ const Home = () => {
             <span className="text-primary">Frontend Developer</span> | B.Tech IT
             Student | MERN Stack Learner
           </h2>
-          <p className="mt-4 text-base font-semibold text-[15px] sm:text-lg leading-relaxed md:text-[17px] lg:text-[19px] leading-relaxed text-white  max-w-full sm:max-w-[90%] md:max-w-[750px] lg:max-w-[900px] xl:max-w-[1000px]">
+          <p className="mt-4 text-base font-semibold text-[15px] sm:text-lg leading-relaxed md:text-[17px] lg:text-[19px] text-white  max-w-full sm:max-w-[90%] md:max-w-[750px] lg:max-w-[900px] xl:max-w-[1000px]">
             A passionate 2nd-year B.Tech Information Technology student and an
             aspiring frontend developer. I'm currently learning the{" "}
             <span className="text-primary font-semibold">MERN stack</span>{" "}
