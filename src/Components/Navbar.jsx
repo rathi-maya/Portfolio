@@ -7,7 +7,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-black z-50 transition-all duration-300 ease-in-out">
       <div className="container mx-auto px-6 py-6 flex justify-between items-center">
         {/* Logo/Name */}
-        <div className="text-xl font-bold text-[#00ffab]">
+        <div className="text-xl font-bold text-primary
+
+">
           RATHI M
         </div>
 
@@ -15,31 +17,41 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8 text-lg">
            <a
             href="#home"
-            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+            className="text-white hover:text-primary
+
+ transition-colors duration-300"
           >
             Home
           </a>
           <a
             href="#about"
-            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+            className="text-white hover:text-primary
+
+ transition-colors duration-300"
           >
             About Me
           </a>
           <a
             href="#skills"
-            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+            className="text-white hover:text-primary
+
+ transition-colors duration-300"
           >
             Skills
           </a>
           <a
             href="#projects"
-            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+            className="text-white hover:text-primary
+
+ transition-colors duration-300"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+            className="text-white hover:text-primary
+
+ transition-colors duration-300"
           >
             Contact
           </a>
