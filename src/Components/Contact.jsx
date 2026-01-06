@@ -1,10 +1,31 @@
-import React from "react";
 import phone from "../assets/phone-call.png";
 import email from "../assets/email.png";
 import linkedin from "../assets/linkedin-logo.png";
 import github from "../assets/github.png";
+import send from "../assets/send.png";
+import emailjs from "@emailjs/browser";
+
 
 function Contact() {
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        e.target,
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Failed to send message");
+      });
+  };
   return (
     <section className="min-h-screen flex flex-col bg-black">
       <div className=" text-primary w-full flex flex-col items-center justify-center px-6">
@@ -39,7 +60,7 @@ function Contact() {
             <li className="flex gap-3">
               {" "}
               <img className="h-[25px] w-[25px]" src={email} alt="email" />
-              rathimaya22@gmail.com
+              rathi.webdeveloper@gmail.com
             </li>
             <li className="flex gap-3">
               <img
@@ -57,15 +78,21 @@ function Contact() {
           </ul>
         </div>
         <div className="pt-2 w-full max-w-xl">
-        <form className=" border border-primary rounded-[10px] text-white">
+         
+         
+
+
+        <form onSubmit={sendEmail} className=" border border-primary rounded-[10px] text-white">
           <div className="m-4 flex flex-col">
             <label className="mx-2" htmlFor="name">
               Name
             </label>
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
-              className="font-bold border-1 border-primary rounded-[10px] m-2 p-2 text-[#808080]"
+    
+              className="border-1 border-primary rounded-[10px] m-2 p-2 text-white font-semibold"
             />
           </div>
           <div className="m-4 flex flex-col">
@@ -74,19 +101,41 @@ function Contact() {
             </label>
             <input
               type="text"
+              name="email"
               placeholder="Your Email"
-              className="font-bold border-1 border-primary rounded-[10px] m-2 p-2 text-[#808080]"
+
+              className=" border-1 border-primary rounded-[10px] m-2 p-2 text-white font-semibold"
             />
           </div>
-          <div className="m-4 flex flex-col">
+          <div className="m-4 flex flex-col relative">
             <label className="mx-2" htmlFor="message">
               Message
             </label>
             <textarea
               rows={4}
               placeholder="Your Message..."
-              className="font-bold border border-primary rounded-[10px] m-2 p-2 text-[#808080] resize-none"
+              required
+              name="message"
+              className=" border border-primary rounded-[10px] m-2 p-2 text-white font-semibold resize-none"
             />
+            <button
+    type="submit"
+    className="
+      absolute
+      bottom-3
+      right-3
+      p-2
+      rounded-full
+     hover:bg-primary/20
+      transition
+    "
+  >
+    <img
+      src={send}
+      alt="Send"
+      className="w-6 h-6 sm:w-7 sm:h-7"
+    />
+  </button>
           </div>
         </form>
         </div>
