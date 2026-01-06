@@ -32,7 +32,7 @@ const Home = () => {
    cardHover font-semibold
   "
             >
-              View My Work
+           <a href="#projects">View My Work</a>   
             </button>
 
             <button
@@ -46,7 +46,7 @@ const Home = () => {
    cardHover font-semibold
   "
             >
-              Download My Resume
+              <a href="/Rathi_Resume.pdf">Download My Resume</a>
             </button>
           </div>
         </div>
