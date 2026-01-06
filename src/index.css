@@ -9,6 +9,10 @@ html, body {
   background-color: black;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #00ffab;
 }
