@@ -9,6 +9,7 @@ import Git from "../assets/Git.png";
 
 function Skills() {
   return (
+    <section id="skills" className="scroll-mt-22">
     <div className="bg-black p-[20px]">
       <div className="text-center">
         <h2
@@ -82,6 +83,7 @@ function Skills() {
         </ul>
       </div>
     </div>
+    </section>
   );
 }
 

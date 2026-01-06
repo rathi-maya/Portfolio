@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +13,36 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8 text-lg">
-          <Link  className="text-white hover:text-[#00ffab] transition-colors duration-300" to="/">Home</Link>
-           <Link  className="text-white hover:text-[#00ffab] transition-colors duration-300" to="/about">About me</Link>
-            <Link  className="text-white hover:text-[#00ffab] transition-colors duration-300" to="/skills">Skills</Link>
-             <Link  className="text-white hover:text-[#00ffab] transition-colors duration-300" to="/projects">Projects</Link>
-              <Link  className="text-white hover:text-[#00ffab] transition-colors duration-300" to="/contact">Contact</Link>    
+           <a
+            href="#home"
+            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+          >
+            About Me
+          </a>
+          <a
+            href="#skills"
+            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="text-white hover:text-[#00ffab] transition-colors duration-300"
+          >
+            Contact
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -53,21 +77,41 @@ const Navbar = () => {
         }}
       >
         <div className="flex flex-col items-center space-y-4">
-        <Link onClick={() => setIsOpen(false)}
-            className="text-white hover:text-primary transition-colors duration-300" to="/">Home</Link>
-        
-          <Link onClick={() => setIsOpen(false)}
-            className="text-white hover:text-primary transition-colors duration-300" to="/about">About Me</Link>
-          
-           <Link onClick={() => setIsOpen(false)}
-            className="text-white hover:text-primary transition-colors duration-300" to="/skills">Skills</Link>
-
-             <Link onClick={() => setIsOpen(false)}
-            className="text-white hover:text-primary transition-colors duration-300" to="/projects">Projects</Link>
-
-             <Link onClick={() => setIsOpen(false)}
-            className="text-white hover:text-primary transition-colors duration-300" to="/contact">
-              Contact</Link>
+          <a
+            href="#home"
+            onClick={() => setIsOpen(false)}
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            onClick={() => setIsOpen(false)}
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            About Me
+          </a>
+          <a
+            href="#skills"
+            onClick={() => setIsOpen(false)}
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            onClick={() => setIsOpen(false)}
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setIsOpen(false)}
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>

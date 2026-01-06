@@ -1,9 +1,6 @@
 const Home = () => {
   return (
-    <section
-      id="home"
-      className="min-h-[calc(100vh-80px)] flex items-center bg-black"
-    >
+    <section id="home" className="min-h-screen flex items-center bg-black">
       <div className="w-full px-6 sm:px-10 md:px-16 lg:px-24">
         <div>
           <h1 className="text-[32px] sm:text-[39px] md:text-[45px] lg:text-[49px] font-bold leading-tight text-white">
@@ -23,36 +20,35 @@ const Home = () => {
             (MongoDB, Express, React, Node.js) and love building responsive,
             user-focused websites.
           </p>
-         <div className="flex flex-col sm:flex-row gap-4 mt-6 items-start">
-
-<button
-  className="
+          <div className="flex flex-col sm:flex-row gap-4 mt-6 items-start">
+            <button
+              className="
     inline-flex items-center justify-center
     px-6 py-3
     text-base sm:text-sm
     min-h-[48px]
     rounded-full
-    border border-primary text-white
+    border-2 border-primary text-white
    cardHover font-semibold
   "
->
-  View My Work
-</button>
+            >
+              View My Work
+            </button>
 
-<button
-  className="
+            <button
+              className="
     inline-flex items-center justify-center
     px-6 py-3
     text-base sm:text-sm
     min-h-[48px]
     rounded-full
-    border border-primary text-white
+    border-2 border-primary text-white
    cardHover font-semibold
   "
->
-  Download My Resume
-</button>
-</div>
+            >
+              Download My Resume
+            </button>
+          </div>
         </div>
       </div>
     </section>

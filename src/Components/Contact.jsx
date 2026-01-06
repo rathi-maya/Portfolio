@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 
 
 function Contact() {
+
     const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,7 +28,7 @@ function Contact() {
       });
   };
   return (
-    <section className="min-h-screen flex flex-col bg-black">
+    <section id="contact" className="min-h-screen flex flex-col bg-black scroll-mt-22">
       <div className=" text-primary w-full flex flex-col items-center justify-center px-6">
         <div className="text-center w-full px-6">
           <h2 className="headHover">Get in Touch</h2>

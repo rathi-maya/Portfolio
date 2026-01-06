@@ -4,6 +4,7 @@ import SideBar from "../assets/education_sideBar.png";
 
 const About = () => {
   return (
+    <section id="about"  className="scroll-mt-22">
      <div className="flex flex-col lg:flex-row min-h-screen bg-black text-white">
       <div className="w-full lg:w-1/3 md:p-10 flex-shrink-0  
                 flex items-center justify-center">
@@ -38,61 +39,61 @@ const About = () => {
           aiming to become a full-stack developer.
         </p>
             <div className=" pl-[70px] lg:pl-[250px] md:pl-[300px] sm:pl-[210px]">
-        <h2 class="text-3xl font-bold mb-4 text-primary headHover">
+        <h2 className="text-3xl font-bold mb-4 text-primary headHover">
           Education
         </h2>
         </div>
         {/* college */}
-        <div class="flex items-start space-x-6">
-          <div class="flex-shrink-0">
-            <img src={SideBar} alt="timeline" class="h-24 w-auto" />
+        <div className="flex items-start space-x-6">
+          <div className="flex-shrink-0">
+            <img src={SideBar} alt="timeline" className="h-24 w-auto" />
           </div>
           <div>
-            <h3 class="text-xl mt-1 font-semibold text-white">
+            <h3 className="text-xl mt-1 font-semibold text-white">
               B.Tech Information Technology
             </h3>
-            <p class="text-lg text-gray-300 mt-1">
+            <p className="text-lg text-gray-300 mt-1">
               PSNA College of Engineering and Technology, Dindigul.
             </p>
-            <p class="text-sm text-[#9FFFCB] mt-2">2024 - 2028</p>
+            <p className="text-sm text-[#9FFFCB] mt-2">2024 - 2028</p>
           </div>
         </div>
 
         {/* higher secondary */}
 
-        <div class="flex items-start space-x-6 mt-3">
-          <div class="flex-shrink-0">
-            <img src={SideBar} alt="timeline" class="h-24 w-auto" />
+        <div className="flex items-start space-x-6 mt-3">
+          <div className="flex-shrink-0">
+            <img src={SideBar} alt="timeline" className="h-24 w-auto" />
           </div>
 
           <div>
-            <h3 class="text-xl mt-1 font-semibold text-white">
+            <h3 className="text-xl mt-1 font-semibold text-white">
               Higher Secondary Education (Class 12)
             </h3>
-            <p class="text-lg text-gray-300 mt-1">
+            <p className="text-lg text-gray-300 mt-1">
               OCPM Girls Higher Secondary School, Madurai.
             </p>
-            <p class="text-sm text-[#9FFFCB] mt-2">2022 - 2024</p>
+            <p className="text-sm text-[#9FFFCB] mt-2">2022 - 2024</p>
           </div>
         </div>
 
         {/* High School */}
 
-        <div class="flex items-start space-x-6 mt-3">
-          <div class="flex-shrink-0 flex justify-center sm:justify-start mb-4 sm:mb-0">
+        <div className="flex items-start space-x-6 mt-3">
+          <div className="flex-shrink-0 flex justify-center sm:justify-start mb-4 sm:mb-0">
           <img src={SideBar}
                alt="timeline"
-               class="h-20 w-auto sm:h-24 md:h-28 transition-all duration-300" />
+               className="h-20 w-auto sm:h-24 md:h-28 transition-all duration-300" />
         </div>
 
           <div>
-            <h3 class="text-xl mt-1 font-semibold text-white">
+            <h3 className="text-xl mt-1 font-semibold text-white">
               Secondary Education (Class 10)
             </h3>
-            <p class="text-lg text-gray-300 mt-1">
+            <p className="text-lg text-gray-300 mt-1">
               OCPM Girls Higher Secondary School, Madurai.
             </p>
-            <p class="text-sm text-[#9FFFCB] mt-2">2021 - 2022</p>
+            <p className="text-sm text-[#9FFFCB] mt-2">2021 - 2022</p>
           </div>
         </div>
 
@@ -100,6 +101,7 @@ const About = () => {
       </div>
     </div>
     </div>
+    </section>
   );
 };
 

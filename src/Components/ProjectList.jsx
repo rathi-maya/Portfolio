@@ -17,7 +17,7 @@ function ProjectList() {
            description : "A Web app that shows real-time weather info using the OpenWeatherMap API. Users can search by city and get temperature, humidity and weather icons.",
            techstack1: "[HTML]",
            techstack2: "[CSS]",
-            techstack3: "[JavaScript]",
+            techstack3: "[JS]",
              techstack4: "[API]",
              view: "https://rathi-maya.github.io/Weather/",
              source : "https://github.com/rathi-maya/Weather.git"
@@ -49,7 +49,7 @@ function ProjectList() {
 
   return (
     <>
-      
+      <section id="projects"  className="scroll-mt-24">
        <div className="bg-black min-h-screen">
       <div className="text-primary  font-bold text-center">
               <h2 className="headHover">
@@ -60,6 +60,7 @@ function ProjectList() {
         {projectsList}     
       </div>
     </div>
+    </section>
     </>
   );
 }
