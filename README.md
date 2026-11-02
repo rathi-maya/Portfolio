@@ -1,10 +1,10 @@
-# 👩‍💻 Rathi Maya | Personal Portfolio
+# 👩‍💻 Rathi M | Personal Portfolio
 
-### Frontend Developer | ECE Student | MERN Stack Learner
+### Frontend Developer | IT Student | MERN Stack Learner
 
 Welcome to my personal portfolio repository!
 
-This portfolio showcases my journey as an Electronics and Communication Engineering student with a strong interest in software development. It highlights my technical skills, projects, educational background and achievements through a modern and responsive web interface.
+This portfolio showcases my journey as an Information Technology student with a strong interest in software development. It highlights my technical skills, projects, educational background and achievements through a modern and responsive web interface.
 
 ## 🌐 Live Demo
 
