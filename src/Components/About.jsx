@@ -27,17 +27,22 @@ const About = () => {
         </h1>
         </div>
         <p className="mb-8 text-lg leading-relaxed ">
-          Hi there! I'm <strong style={{ color: "#00ffab" }}>Rathi M</strong>, a
-          second-year B.TECH IT student with a strong passion for{" "}
-          <strong style={{ color: "#00ffab" }}>Frontend Development</strong>. My
-          curiosity for building digital interfaces started early in college,
-          and I've been exploring technologies ever since. I started by building
-          simple static pages with <strong className="text-white">HTML</strong>{" "}
-          and <strong className="text-white">CSS</strong>,{" "}
-          <strong className="text-white">JavaScript</strong> gradually moved
-          into <strong className="text-white">React</strong>. Now, I'm actively
-          learning the <strong className="text-white">MERN stack</strong>,
-          aiming to become a full-stack developer.
+           Hi there! I'm <strong className="text-primary font-semibold">Rathi M</strong>,
+  a <strong>third-year B.Tech IT student</strong> with a strong passion
+  for web development.
+
+  I enjoy building <strong>responsive, interactive, and user-friendly
+  web applications</strong>. My journey started with building simple
+  web pages using <strong>HTML, CSS, and JavaScript</strong>, and
+  gradually progressed into <span className="font-semibold" style={{ color: "#00ffab" }}>React.js</span>.
+
+  Currently, I'm actively exploring the <strong className="text-primary font-semibold">
+  MERN stack</strong> and developing <strong>full-stack applications</strong>
+  to strengthen my frontend and backend skills. I'm passionate about
+   learning new technologies,
+  solving problems, and turning creative ideas into practical digital
+  solutions. My goal is to become a skilled
+  <strong className="text-primary font-semibold" > Full Stack Developer</strong>.
         </p>
             <Education />
       </div>

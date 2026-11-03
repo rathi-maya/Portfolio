@@ -10,15 +10,11 @@ const Home = () => {
             className="mt-2 text-[16px] sm:text-[18px] md:text-[19px] lg:text-[21px]
            font-semibold text-white"
           >
-            <span className="text-primary">Frontend Developer</span> | B.Tech IT
-            Student | MERN Stack Learner
+            <span className="text-primary">Fullstack Developer</span> | B.Tech IT
+            Student | 
           </h2>
           <p className="mt-4 text-base font-semibold text-[15px] sm:text-lg leading-relaxed md:text-[17px] lg:text-[19px] text-white  max-w-full sm:max-w-[90%] md:max-w-[750px] lg:max-w-[900px] xl:max-w-[1000px]">
-            A passionate 2nd-year B.Tech Information Technology student and an
-            aspiring frontend developer. I'm currently learning the{" "}
-            <span className="text-primary font-semibold">MERN stack</span>{" "}
-            (MongoDB, Express, React, Node.js) and love building responsive,
-            user-focused websites.
+           I'm a passionate third-year Information Technology student who enjoys building responsive and user-friendly web applications. I work with React.js and the <span className="text-primary font-semibold">MERN stack,</span>  turning ideas into functional digital experiences. I enjoy solving problems, exploring new technologies, and continuously improving my development skills.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 items-start">
             <button
