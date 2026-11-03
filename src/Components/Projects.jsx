@@ -1,54 +1,117 @@
+import { FaGithub } from "react-icons/fa";
 
+import {
+  UserRound,
+  Cloud,
+  Code2,
+  ExternalLink
+} from "lucide-react";
 function Projects(props) {
+
+  // Select icon based on project title
+  const ProjectIcon = props.title.includes("Login")
+    ? UserRound
+    : props.title.includes("Weather")
+    ? Cloud
+    : Code2;
+
+  // Collect available technologies
+  const techStack = [
+    props.techstack1,
+    props.techstack2,
+    props.techstack3,
+    props.techstack4,
+    props.techstack5
+  ].filter(Boolean);
+
   return (
-    <div className="text-white w-full max-w-[340px] h-[420px] mx-auto
-                border-2 border-primary rounded-[8px]
-                p-6 lg:p-5 xl:p-6
-                cardHover flex flex-col">
+    <div className="
+      w-full max-w-[360px] min-h-[420px]
+      mx-auto p-5 md:p-6
+      bg-black text-white
+      border border-primary/70
+      rounded-xl
+      flex flex-col
+      transition-all duration-300
+      hover:border-primary
+      hover:shadow-[0_0_18px_rgba(0,229,160,0.15)]
+      group
+    ">
+
+      {/* Project Icon */}
+      <div className="
+        w-12 h-12
+        rounded-xl
+        bg-primary/10
+        text-primary
+        flex items-center justify-center
+        mb-4
+        transition-all duration-300
+        group-hover:bg-primary/20
+      ">
+        <ProjectIcon size={25} />
+      </div>
 
       {/* Project Title */}
-      <h2 className="text-center text-xl font-bold mb-4">
+      <h2 className="text-lg font-bold mb-3">
         {props.title}
       </h2>
 
       {/* Description */}
-     <p className="text-[16px] leading-6">
-  {props.description}
-</p>
+      <p className="text-sm leading-6 text-gray-300 break-words">
+        {props.description}
+      </p>
+
       {/* Tech Stack */}
       <div className="mt-5">
-        <h3 className="font-semibold text-base mb-2">
+
+        <h3 className="text-sm font-semibold mb-3">
           Tech Used
         </h3>
 
-        <div className="flex flex-wrap justify-center gap-2
-                        text-primary font-semibold text-[15px]">
+        <div className="flex flex-wrap gap-2">
 
-          {props.techstack1 && <span> {props.techstack1} </span>}
-          {props.techstack2 && <span> {props.techstack2} </span>}
-          {props.techstack3 && <span> {props.techstack3} </span>}
-          {props.techstack4 && <span> {props.techstack4} </span>}
-          {props.techstack5 && <span> {props.techstack5} </span>}
+          {techStack.map((tech, index) => (
+            <span
+              key={index}
+              className="
+                px-3 py-1.5
+                rounded-md
+                bg-primary/10
+                border border-primary/20
+                text-primary
+                text-xs font-semibold
+              "
+            >
+              {tech}
+            </span>
+          ))}
 
         </div>
       </div>
 
-      {/* Links */}
-      <div className="mt-4">
+      {/* Project Links */}
+      <div className="mt-auto pt-6">
 
-        <h3 className="font-semibold text-base mb-3">
-          🔗 Links
-        </h3>
-
-        <div className="flex flex-wrap lg:flex-nowrap gap-3">
+        <div className="flex flex-wrap gap-2">
 
           {props.view && (
-            <a className="btn cardHover whitespace-nowrap"
+            <a
               href={props.view}
               target="_blank"
               rel="noopener noreferrer"
+              className="
+                flex items-center justify-center gap-2
+                px-3 py-2
+                rounded-lg
+                bg-primary text-black
+                text-sm font-semibold
+                transition-all duration-300
+                hover:bg-primary/80
+              "
             >
               View Demo
+              <ExternalLink size={15} />
             </a>
           )}
 
@@ -57,9 +120,19 @@ function Projects(props) {
               href={props.source}
               target="_blank"
               rel="noopener noreferrer"
-            className="btn cardHover whitespace-nowrap"
+              className="
+                flex items-center justify-center gap-2
+                px-3 py-2
+                rounded-lg
+                border border-primary
+                text-white
+                text-sm font-semibold
+                transition-all duration-300
+                hover:bg-primary hover:text-black
+              "
             >
-              Source code
+        <FaGithub size={15} />
+Source Code
             </a>
           )}
 
@@ -71,3 +144,4 @@ function Projects(props) {
 }
 
 export default Projects;
+
