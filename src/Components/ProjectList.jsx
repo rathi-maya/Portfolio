@@ -36,16 +36,19 @@ function ProjectsList() {
       view: "https://rathi-maya.github.io/Weather/",
       source: "https://github.com/rathi-maya/Weather.git"
     },
-
-    {
-      title: "Portfolio",
-      description:
-        "My personal portfolio showcasing projects, contact info and skills. Built using React and designed to be fully responsive with clean navigation.",
-
-      techstack1: "ReactJS",
+     { title: "UrbanKey – Real Estate Website",
+       description:"A modern real estate landing page with a clean design and responsive layout, built to showcase properties and deliver a smooth browsing experience.",
+      techstack1: "React Js",
       techstack2: "Tailwind CSS",
-
-      source: "https://github.com/rathi-maya/Portfolio.git"
+      view : "https://theurbankeys.netlify.app/",
+      source: "https://github.com/rathi-maya/urbanKeys.git"
+    },
+     { title: "To-Do List Application",
+       description:"A full-stack task management application that allows users to add, edit, mark tasks as completed, and delete tasks. Tasks are stored securely in MongoDB with a responsive user interface.",
+      techstack1: "MERN",
+      techstack2: "Tailwind CSS",
+      view : "https://rathi-todo-list.netlify.app/",
+      source: "https://github.com/rathi-maya/To-Do-list.git"
     }
   ];
 
